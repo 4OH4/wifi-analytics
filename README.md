@@ -1,3 +1,5 @@
+** work in progress **
+
 # wifi-analytics
 Sniffing WiFi data for advanced analytics, using a Raspberry Pi
 
@@ -15,3 +17,6 @@ sudo ifconfig wlan0 down
 sudo iwconfig wlan0 mode monitor
 sudo ifconfig wlan0 up
 ```
+
+## Setting up and running:
+Clone this repository, build the Docker container, and run it in privilleged mode
