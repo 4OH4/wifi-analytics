@@ -18,10 +18,15 @@ RUN apt-get update && apt-get install -y \
     mysql-client \
     libmysqld-dev \
     pwgen \
-	tshark && rm -rf /var/lib/apt/lists/*
+	tshark \
+	wget \
+	wireless-tools && rm -rf /var/lib/apt/lists/*
 	
 #RUN pip3 install uwsgi django
 
+# Get the SSID hoover script
+RUN cd /tmp && \
+	wget https://github.com/xme/hoover/blob/master/hoover.pl
 
 #EXPOSE 80
 CMD ["/bin/bash"] #, "/home/django/start.sh"]

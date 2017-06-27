@@ -25,7 +25,7 @@ Clone the repository, build the Docker container, and run it in privilleged mode
 git clone https://github.com/4OH4/wifi-analytics.git
 cd wifi-analytics
 docker build –t wifi-analytics .
-docker run -ti --net=host --privileged wifi-analytics /bin/bash
+docker run -ti -v /home/pirate/wifi-analytics/output:/home/pirate/output --net=host --privileged wifi-analytics /bin/bash
 ```
 
 ## Capturing packets
