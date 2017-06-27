@@ -4,6 +4,8 @@ MAINTAINER 4oh4 <4oh4.git@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN sudo date +%Y%m%d -s "20170627"
+
 RUN apt-get update && apt-get install -y \
     git \
     vim \
