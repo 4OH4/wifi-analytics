@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
 
 # Get the SSID hoover script
 RUN cd /tmp && \
-	wget https://github.com/xme/hoover/blob/master/hoover.pl
+	wget -O hoover.pl https://github.com/xme/hoover/blob/master/hoover.pl && chmod u+x hoover.pl
 
 #EXPOSE 80
 CMD ["/bin/bash"] #, "/home/django/start.sh"]
